@@ -18,7 +18,7 @@ A voronoi diagram creator with various parameters for creating or updating the g
 > Sets color of rectangles. ColorArray is array of string 'rgb(x,x,x)' values or named colors ie. 'blue'. Even if you just want one color for all the polygons, must pass an array
 
 \# *Voronoi*.**rectOpacity**(value)
-> Sets opacity of the rectangles, value is an integer or float that must be between 0 and 1
+> Sets opacity of the rectangles. Value must be an integer or float that must be between 0 and 1
 
 \# *Voronoi*.**circleSize**(value)
-> Sets circle size of points in the diagram, value must be int or float
+> Sets circle size of points in the diagram. Value must be int or float
