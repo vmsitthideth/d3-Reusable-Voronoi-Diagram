@@ -1,33 +1,38 @@
 $(function () {
 
+var dataSet = d3.range(100).map(function(d) {
+  return [Math.random() * 960, Math.random() * 500];
+});
 
-var dataSet = [
-	[1, 2],
-	[3, 4],
-	[5, 6]
-];
+// console.log(dataSet)
+
+// var dataSet = [
+// 	[1, 2],
+// 	[3, 4],
+// 	[5, 6]
+// ];
 
 
 // var dataSet = [
-// 	{'x': 0, 'y': 5},
-// 	{'x': 5, 'y': 10},
-// 	{'x': 10, 'y': 15},
-// 	{'x': 15, 'y': 20},
-// 	{'x': 20, 'y': 25},
-// 	{'x': 25, 'y': 30}
+// 	[0, 5],
+// 	[5, 10],
+// 	[10, 15],
+// 	[15, 20],
+// 	[20, 25],
+// 	[25, 30]
 // ];
 
 var myChart = Voronoi();
 
 var chartWrapper = d3.select('#my-div')
-						.datum([dataSet])
+						.datum(dataSet)
 						.call(myChart);
 
 myChart.width(900)
 	   .height(500)
-	   .rectColor(['red'])
+	   .rectColor(['red', 'blue', 'white', 'green', 'yellow'])
 	   .rectOpacity(0.5)
 	   .circleSize(10);
 
-chartWrapper.datum([dataSet]).call(myChart);
+chartWrapper.datum(dataSet).call(myChart);
 })
