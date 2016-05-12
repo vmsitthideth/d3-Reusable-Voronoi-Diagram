@@ -1,6 +1,7 @@
 # voronoi.js API Reference
 
-A voronoi diagram creator with various parameters for creating or updating the graph
+A voronoi diagram creator with various parameters for creating or updating the graph.
+Data passed in should be in the form of an array of arrays, where the nested array is the [x, y] coord
 
 ## API Functions
 
